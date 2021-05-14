@@ -4,7 +4,7 @@ from colorama import Fore
 import random
 import time
 #Enter Password with four digit#
-password = 7692
+password = 7692 #enter here
 num = 1
 if input() == "start":
   starttime = time.time()
