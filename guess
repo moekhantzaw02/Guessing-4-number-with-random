@@ -1,0 +1,29 @@
+from colorama import Fore
+
+
+import random
+import time
+#Enter Password with four digit#
+password = 7692
+num = 1
+if input() == "start":
+  starttime = time.time()
+    while True:
+
+
+        num += 1
+        time.sleep(0.00001111)
+        number = random.randint(999, 10000)
+        print(Fore.GREEN + "Guess Password -", number, Fore.BLACK, "/", Fore.GREEN,  "Guess count -", num)
+        if number == password:
+            match_number = number
+            print( Fore.YELLOW ,"\n##################################")
+            print(f"  Password match!\n  password =" , match_number,f"\n  Count = {num}")
+            break
+        end = time.time()
+        execution_time = end - starttime
+        limited_float = round(execution_time, 2)
+    print("  Execution time: " + str(float(limited_float)) + " seconds  ")
+    print("##################################")
+
+
